@@ -46,7 +46,7 @@ a {
 .header .headerbottomtext {
   height: fit-content;
   vertical-align: middle;
-  transform: translateY(1rem);
+  transform: translateY(4rem);
 }
 .header .headerbottomtext p {
   display: inline-block;
@@ -76,7 +76,7 @@ a {
   transition: all 0.2s;
 }
 .navbar .navmywork {
-  background: gainsboro;
+  background: azure;
 }
 .navbar .navcontact {
   background: crimson;
@@ -86,8 +86,8 @@ a {
   border-right: 5px crimson solid;
 }
 .navbar .navcontact a {
-  color: gainsboro;
-  border-left: 5px gainsboro solid;
+  color: azure;
+  border-left: 5px azure solid;
 }
 .navbar .navmywork a:hover {
   border-radius: 150px;
@@ -97,6 +97,8 @@ a {
   border-radius: 150px;
   border: 5px gainsboro solid;
 }
-.mywork {
+.mywork,
+.contact {
+  height: 100vh;
   background: rgb(32, 46, 58);
 }
