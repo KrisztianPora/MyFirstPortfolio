@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: gainsboro;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background: linear-gradient(
+      rgba(32, 46, 58, 1),
+      rgba(32, 46, 58, 0.9),
+      rgba(32, 46, 58, 1)
+    ),
+    url(/MyFirstPortfolio/images/codingbackgroudn.jpeg) center/cover no-repeat;
+  width: 100vw;
+  max-width: 100%;
+  height: 60vh;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center;
+}
+.header h1 {
+  padding-top: 7vh;
+  display: inline-block;
+  font-size: 10rem;
+  border-bottom: crimson 2px solid;
+  transform: all 0.5s;
+}
+.header .subtext {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  letter-spacing: 0.8rem;
+}
+.header .subtext h3 {
+  display: inline-block;
+}
+.header .logos {
+  width: 300px;
+}
+.header .mainheader {
+  height: fit-content;
+}
+.header .headerbottomtext {
+  height: fit-content;
+  vertical-align: middle;
+  transform: translateY(1rem);
+}
+.header .headerbottomtext p {
+  display: inline-block;
+  font-size: 2rem;
+}
+.navbar {
+  background: rgb(32, 46, 58);
+  width: 100vw;
+  max-width: 100%;
+  height: 40vh;
+  display: table;
+  table-layout: fixed;
+}
+.navbar div {
+  display: table-cell;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.navbar div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 5rem;
+  border-radius: 20px;
+  padding: 5rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+.navbar .navmywork {
+  background: gainsboro;
+}
+.navbar .navcontact {
+  background: crimson;
+}
+.navbar .navmywork a {
+  color: crimson;
+  border-right: 5px crimson solid;
+}
+.navbar .navcontact a {
+  color: gainsboro;
+  border-left: 5px gainsboro solid;
+}
+.navbar .navmywork a:hover {
+  border-radius: 150px;
+  border: 5px crimson solid;
+}
+.navbar .navcontact a:hover {
+  border-radius: 150px;
+  border: 5px gainsboro solid;
+}
+.mywork {
+  background: rgb(32, 46, 58);
+}
