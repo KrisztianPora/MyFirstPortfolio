@@ -115,10 +115,10 @@ a {
 
 @media screen and (max-width: 450px) {
   .home {
-    height: 90%;
+    height: 85%;
   }
   .header {
-    height: 75vh;
+    height: 70vh;
   }
   .header .mainheader {
     height: 45vh;
@@ -134,11 +134,11 @@ a {
   .header .mainheader .subtext {
     font-size: 15px;
   }
-  .header .mainheader .subtext img {
-    padding-top: 2vh;
+  .header .mainheader img {
+    padding: 0;
   }
   .header .headerbottomtext {
-    padding-top: 5vh;
+    padding-top: 2vh;
     height: 25vh;
   }
   .header .headerbottomtext p {
