@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&display=swap");
+body {
+  background: rgb(32, 46, 58);
+}
 * {
   margin: 0;
   padding: 0;
@@ -116,6 +119,7 @@ a {
 @media screen and (max-width: 450px) {
   .home {
     height: 85%;
+    margin-bottom: 15vh;
   }
   .header {
     height: 70vh;
