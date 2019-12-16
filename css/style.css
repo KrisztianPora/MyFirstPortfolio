@@ -3,10 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: gainsboro;
+  color: azure;
 }
 a {
   text-decoration: none;
+}
+.home {
+  height: 100%;
 }
 .header {
   background: linear-gradient(
@@ -17,16 +20,16 @@ a {
     url(/MyFirstPortfolio/images/codingbackgroudn.jpeg) center/cover no-repeat;
   width: 100vw;
   max-width: 100%;
-  height: 60vh;
+  height: 563px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center;
 }
 .header h1 {
-  padding-top: 7vh;
   display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
   font-size: 10rem;
   border-bottom: crimson 2px solid;
-  transform: all 0.5s;
 }
 .header .subtext {
   display: block;
@@ -41,12 +44,14 @@ a {
   width: 300px;
 }
 .header .mainheader {
+  padding-top: 42.828px;
   height: fit-content;
+  padding-bottom: 42.828px;
 }
 .header .headerbottomtext {
   height: fit-content;
   vertical-align: middle;
-  transform: translateY(4rem);
+  padding: 0 10vw;
 }
 .header .headerbottomtext p {
   display: inline-block;
@@ -54,39 +59,44 @@ a {
 }
 .navbar {
   width: 100%;
-  height: 40vh;
+  height: 374px;
   display: table;
   table-layout: fixed;
+  overflow: hidden;
 }
 .navbar div {
   display: table-cell;
   line-height: 100%;
-  text-align: center;
   vertical-align: middle;
 }
 .navbar div a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 5vw;
   border-radius: 20px;
-  padding: 5rem;
-  text-align: center;
-  transition: all 0.2s;
+  padding: 5vw;
+  vertical-align: middle;
+  transition-property: border, border-radius;
+  transition-duration: 0.3s;
 }
 .navbar .navmywork {
+  text-align: right;
   background: azure;
 }
 .navbar .navcontact {
+  text-align: left;
   background: crimson;
 }
 .navbar .navmywork a {
+  margin-right: 10vw;
   color: crimson;
   border: 5px azure solid;
   border-right: 5px crimson solid;
 }
 .navbar .navcontact a {
+  margin-left: 10vw;
   color: azure;
-  border: 5px rgba(220, 20, 60, 0) solid;
+  border: 5px crimson solid;
   border-left: 5px azure solid;
 }
 .navbar .navmywork a:hover {
@@ -95,10 +105,44 @@ a {
 }
 .navbar .navcontact a:hover {
   border-radius: 150px;
-  border: 5px gainsboro solid;
+  border: 5px azure solid;
 }
 .mywork,
 .contact {
   height: 100vh;
   background: rgb(32, 46, 58);
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: 80vh;
+    padding: 1vh;
+  }
+  .header .mainheader {
+    height: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .header .mainheader h1 {
+    font-size: 60px;
+  }
+  .header .mainheader .logos {
+    width: 70vw;
+  }
+  .header .mainheader .subtext {
+    font-size: 15px;
+  }
+  .header .mainheader .subtext img {
+    padding-top: 3vh;
+  }
+  .header .headerbottomtext {
+    padding-top: 3vh;
+    height: 25vh;
+  }
+  .header .headerbottomtext p {
+    font-size: 25px;
+  }
+  .navbar {
+    height: 20vh;
+  }
 }
