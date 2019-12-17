@@ -97,26 +97,26 @@ a {
   position: relative;
 }
 .navbar .navmywork a {
-  margin-right: 2vw;
+  margin-right: 2.5vw;
   color: crimson;
   border: 5px azure solid;
   border-right: 5px crimson solid;
 }
 .navbar .navcontact a {
-  margin-left: 2vw;
+  margin-left: 2.5vw;
   color: azure;
   border: 5px crimson solid;
   border-left: 5px azure solid;
 }
 .navbar .navmywork i {
   color: crimson;
-  margin-right: 2vw;
+  margin-right: 2.5vw;
   vertical-align: middle;
   font-size: 4vw;
 }
 .navbar .navcontact i {
   color: azure;
-  margin-left: 2vw;
+  margin-left: 2.5vw;
   vertical-align: middle;
   font-size: 4vw;
 }
@@ -295,10 +295,18 @@ a {
   .navbar {
     height: 15vh;
   }
-  /* .navbar .navmywork a {
-    margin-right: 5vw;
+  .navbar .navmywork a {
+    margin-right: 1vw;
   }
   .navbar .navcontact a {
-    margin-left: 5vw;
-  } */
+    margin-left: 1vw;
+  }
+  .navbar .navmywork i {
+    margin-right: 1vw;
+    font-size: 6vw;
+  }
+  .navbar .navcontact i {
+    margin-left: 1vw;
+    font-size: 6vw;
+  }
 }
