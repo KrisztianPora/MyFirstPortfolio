@@ -88,16 +88,34 @@ a {
 .navbar .navmywork {
   text-align: right;
   background: azure;
+  position: relative;
 }
 .navbar .navcontact {
   text-align: left;
   background: crimson;
+  position: relative;
 }
 .navbar .navmywork a {
   margin-right: 10vw;
   color: crimson;
   border: 5px azure solid;
   border-right: 5px crimson solid;
+}
+.navbar .navmywork a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navbar .navcontact a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .navbar .navcontact a {
   margin-left: 10vw;
@@ -112,6 +130,14 @@ a {
 .navbar .navcontact a:hover {
   border-radius: 150px;
   border: 5px azure solid;
+}
+.navbar .navmywork a:active {
+  background: crimson;
+  color: azure;
+}
+.navbar .navcontact a:active {
+  background: azure;
+  color: crimson;
 }
 .mywork,
 .contact {
