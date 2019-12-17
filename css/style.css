@@ -243,6 +243,22 @@ a {
   .navbar {
     height: 25vh;
   }
+  .navbar .navmywork a {
+    margin-right: 0;
+    padding: 3vw;
+  }
+  .navbar .navcontact a {
+    margin-left: 1vw;
+    padding: 3vw;
+  }
+  .navbar .navmywork i {
+    margin-right: 1vw;
+    font-size: 6vw;
+  }
+  .navbar .navcontact i {
+    margin-left: 1vw;
+    font-size: 6vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -297,21 +313,5 @@ a {
   }
   .navbar {
     height: 15vh;
-  }
-  .navbar .navmywork a {
-    margin-right: 0;
-    padding: 3vw;
-  }
-  .navbar .navcontact a {
-    margin-left: 1vw;
-    padding: 3vw;
-  }
-  .navbar .navmywork i {
-    margin-right: 1vw;
-    font-size: 6vw;
-  }
-  .navbar .navcontact i {
-    margin-left: 1vw;
-    font-size: 6vw;
   }
 }
