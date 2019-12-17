@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&display=swap");
+:root {
+  --primaryColor: azure;
+  --secondaryColor: crimson;
+}
 body {
   background: rgb(32, 46, 58);
 }
@@ -6,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: azure;
+  color: var(--primaryColor);
 }
 a {
   text-decoration: none;
@@ -33,7 +37,7 @@ a {
   max-width: 100%;
   overflow: hidden;
   font-size: 10rem;
-  border-bottom: crimson 2px solid;
+  border-bottom: var(--secondaryColor) 2px solid;
 }
 .header .subtext {
   display: block;
@@ -91,34 +95,34 @@ a {
 }
 .navbar .navmywork {
   text-align: right;
-  background: azure;
+  background: var(--primaryColor);
   position: relative;
 }
 .navbar .navcontact {
   text-align: left;
-  background: crimson;
+  background: var(--secondaryColor);
   position: relative;
 }
 .navbar .navmywork a {
   margin-right: 2.5vw;
-  color: crimson;
-  border: 5px azure solid;
-  border-right: 5px crimson solid;
+  color: var(--secondaryColor);
+  border: 5px var(--primaryColor) solid;
+  border-right: 5px var(--secondaryColor) solid;
 }
 .navbar .navcontact a {
   margin-left: 2.5vw;
-  color: azure;
-  border: 5px crimson solid;
-  border-left: 5px azure solid;
+  color: var(--primaryColor);
+  border: 5px var(--secondaryColor) solid;
+  border-left: 5px var(--primaryColor) solid;
 }
 .navbar .navmywork i {
-  color: crimson;
+  color: var(--secondaryColor);
   margin-right: 2.5vw;
   vertical-align: middle;
   font-size: 4vw;
 }
 .navbar .navcontact i {
-  color: azure;
+  color: var(--primaryColor);
   margin-left: 2.5vw;
   vertical-align: middle;
   font-size: 4vw;
@@ -141,19 +145,19 @@ a {
 }
 .navbar .navmywork a:hover {
   border-radius: 150px;
-  border: 5px crimson solid;
+  border: 5px var(--secondaryColor) solid;
 }
 .navbar .navcontact a:hover {
   border-radius: 150px;
-  border: 5px azure solid;
+  border: 5px var(--primaryColor) solid;
 }
 .navbar .navmywork a:active {
-  background: crimson;
-  color: azure;
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
 }
 .navbar .navcontact a:active {
-  background: azure;
-  color: crimson;
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
 }
 .mywork {
   height: fit-content;
@@ -176,31 +180,68 @@ a {
   text-align: center;
 }
 .mywork .myworktopnavbar i {
-  color: azure;
+  color: var(--primaryColor);
   font-size: 93px;
   border: 5px rgb(32, 46, 58) solid;
 }
 .mywork .myworkbottomnavbar i {
-  color: azure;
+  color: var(--primaryColor);
   font-size: 93px;
   border: 5px rgb(32, 46, 58) solid;
 }
 .mywork .myworktopnavbar i:hover {
-  border-bottom: 5px crimson solid;
+  border-bottom: 5px var(--secondaryColor) solid;
 }
 .mywork .myworkbottomnavbar i:hover {
-  border-top: 5px crimson solid;
+  border-top: 5px var(--secondaryColor) solid;
 }
 .mywork .myworktopnavbar i:active {
-  color: crimson;
+  color: var(--secondaryColor);
 }
 .mywork .myworkbottomnavbar i:active {
-  color: crimson;
+  color: var(--secondaryColor);
 }
 .contact {
-  height: 100vh;
+  height: fit-content;
   background: rgb(32, 46, 58);
-  position: relative;
+  width: 100%;
+}
+.contact .contactcontent {
+  background: coral;
+}
+.contact .contacttopnavbar {
+  margin: 0 auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.contact .contactbottomnavbar {
+  margin: 0 auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.contact .contacttopnavbar i {
+  color: var(--primaryColor);
+  font-size: 93px;
+  border: 5px rgb(32, 46, 58) solid;
+}
+.contact .contactbottomnavbar i {
+  color: var(--primaryColor);
+  font-size: 93px;
+  border: 5px rgb(32, 46, 58) solid;
+}
+.contact .contacttopnavbar i:hover {
+  border-bottom: 5px var(--secondaryColor) solid;
+}
+.contact .contactbottomnavbar i:hover {
+  border-top: 5px var(--secondaryColor) solid;
+}
+.contact .contacttopnavbar i:active {
+  color: var(--secondaryColor);
+}
+.contact .contactbottomnavbar i:active {
+  color: var(--secondaryColor);
 }
 
 @media screen and (max-width: 750px) {
