@@ -43,6 +43,9 @@ a {
 .header .subtext h3 {
   display: inline-block;
 }
+.header .subtext .visible-smallscreen {
+  display: none;
+}
 .header .logos {
   width: 300px;
 }
@@ -116,6 +119,62 @@ a {
   background: rgb(32, 46, 58);
 }
 
+@media screen and (max-width: 750px) {
+  .home {
+    height: 80%;
+    margin-bottom: 5vh;
+  }
+  .header {
+    height: 55vh;
+    min-height: 420px;
+  }
+  .header .mainheader {
+    height: 40vh;
+    padding-top: 2vh;
+    padding-bottom: 0;
+    min-height: 340px;
+  }
+  .header .mainheader h1 {
+    font-size: 120px;
+  }
+  .header .mainheader .subtext {
+    font-size: 20px;
+    padding: 0 1vw;
+    padding-top: 1vh;
+  }
+  .header .mainheader .subtext img {
+    padding: 0;
+    padding-top: 2vh;
+  }
+  .header .subtext .visible-smallscreen {
+    display: block;
+  }
+  .header .headerbottomtext {
+    padding-top: auto;
+    height: auto;
+  }
+  .header .headerbottomtext p {
+    font-size: 25px;
+  }
+  .navbar {
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .mainheader {
+    height: 38vh;
+    min-height: 300px;
+  }
+  .header .mainheader h1 {
+    font-size: 90px;
+  }
+  .header .mainheader .subtext {
+    font-size: 15px;
+    letter-spacing: 0.6rem;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .home {
     height: 85%;
@@ -126,20 +185,24 @@ a {
   }
   .header .mainheader {
     height: 45vh;
+    min-height: 240px;
     padding-top: 2vh;
     padding-bottom: 0;
   }
   .header .mainheader h1 {
-    font-size: 60px;
+    font-size: 20vw;
   }
   .header .mainheader .logos {
     width: 70vw;
   }
   .header .mainheader .subtext {
-    font-size: 15px;
+    font-size: 4vw;
+    padding-bottom: 0;
+    letter-spacing: 2vw;
   }
-  .header .mainheader img {
+  .header .mainheader .subtext img {
     padding: 0;
+    padding-top: 2vh;
   }
   .header .headerbottomtext {
     padding-top: 2vh;
@@ -150,5 +213,11 @@ a {
   }
   .navbar {
     height: 15vh;
+  }
+  .navbar .navmywork a {
+    margin-right: 5vw;
+  }
+  .navbar .navcontact a {
+    margin-left: 5vw;
   }
 }
