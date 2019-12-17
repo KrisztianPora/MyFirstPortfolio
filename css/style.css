@@ -96,10 +96,28 @@ a {
   position: relative;
 }
 .navbar .navmywork a {
-  margin-right: 10vw;
+  margin-right: 2.5vw;
   color: crimson;
   border: 5px azure solid;
   border-right: 5px crimson solid;
+}
+.navbar .navcontact a {
+  margin-left: 2.5vw;
+  color: azure;
+  border: 5px crimson solid;
+  border-left: 5px azure solid;
+}
+.navbar .navmywork i {
+  color: crimson;
+  margin-right: 2.5vw;
+  vertical-align: middle;
+  font-size: 4vw;
+}
+.navbar .navcontact i {
+  color: azure;
+  margin-left: 2.5vw;
+  vertical-align: middle;
+  font-size: 4vw;
 }
 .navbar .navmywork a::before {
   content: "";
@@ -116,12 +134,6 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-}
-.navbar .navcontact a {
-  margin-left: 10vw;
-  color: azure;
-  border: 5px crimson solid;
-  border-left: 5px azure solid;
 }
 .navbar .navmywork a:hover {
   border-radius: 150px;
@@ -240,10 +252,10 @@ a {
   .navbar {
     height: 15vh;
   }
-  .navbar .navmywork a {
+  /* .navbar .navmywork a {
     margin-right: 5vw;
   }
   .navbar .navcontact a {
     margin-left: 5vw;
-  }
+  } */
 }
