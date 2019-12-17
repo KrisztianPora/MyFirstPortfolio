@@ -13,6 +13,7 @@ a {
 }
 .home {
   height: 100%;
+  /* margin-bottom: 15vh; */
 }
 .header {
   background: linear-gradient(
@@ -151,10 +152,52 @@ a {
   background: azure;
   color: crimson;
 }
-.mywork,
+.mywork {
+  height: fit-content;
+  background: rgb(32, 46, 58);
+  width: 100%;
+}
+.mywork .myworkcontent {
+  background: coral;
+}
+.mywork .myworktopnavbar {
+  margin: 0 auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.mywork .myworkbottomnavbar {
+  margin: 0 auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.mywork .myworktopnavbar i {
+  color: azure;
+  font-size: 93px;
+  border: 5px rgb(32, 46, 58) solid;
+}
+.mywork .myworkbottomnavbar i {
+  color: azure;
+  font-size: 93px;
+  border: 5px rgb(32, 46, 58) solid;
+}
+.mywork .myworktopnavbar i:hover {
+  border-bottom: 5px crimson solid;
+}
+.mywork .myworkbottomnavbar i:hover {
+  border-top: 5px crimson solid;
+}
+.mywork .myworktopnavbar i:active {
+  color: crimson;
+}
+.mywork .myworkbottomnavbar i:active {
+  color: crimson;
+}
 .contact {
   height: 100vh;
   background: rgb(32, 46, 58);
+  position: relative;
 }
 
 @media screen and (max-width: 750px) {
