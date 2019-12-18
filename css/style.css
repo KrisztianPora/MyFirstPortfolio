@@ -244,6 +244,13 @@ a {
   color: var(--secondaryColor);
 }
 
+@media screen and (min-width: 2000px) {
+  .navbar div a {
+    font-size: 111px;
+    padding: 100px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .home {
     height: 80%;
