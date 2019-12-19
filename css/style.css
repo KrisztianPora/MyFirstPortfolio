@@ -16,6 +16,11 @@ body {
 a {
   text-decoration: none;
 }
+input,
+textarea,
+select {
+  outline: none;
+}
 .home {
   height: 100%;
 }
@@ -26,10 +31,10 @@ a {
       rgba(32, 46, 58, 1)
     ),
     url(/MyFirstPortfolio/images/codingbackgroudn.jpeg) center/cover no-repeat;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   width: 100vw;
   max-width: 100%;
   height: 563px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center;
 }
 .header h1 {
@@ -95,7 +100,7 @@ a {
   text-decoration: none;
   font-size: 5vw;
   border-radius: 20px;
-  padding: 5vw;
+  padding: 4vw;
   vertical-align: middle;
   transition-property: border, border-radius;
   transition-duration: 0.3s;
@@ -179,11 +184,15 @@ a {
   clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
 }
 .mywork .myworkcontent {
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
+}
+.mywork .myworkcontent img {
+  max-width: 100%;
 }
 .mywork .myworkfooter {
   height: fit-content;
@@ -214,9 +223,63 @@ a {
   height: fit-content;
   background: rgb(32, 46, 58);
   width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
-/* .contact .contactcontent {
-} */
+.contact .contactcontent {
+  margin: 5vh 0;
+  text-align: center;
+}
+.contact .contactcontent h1 {
+  display: inline-block;
+  margin-bottom: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 10rem;
+  border-bottom: var(--secondaryColor) 2px solid;
+}
+.contact .contactcontent input,
+.contact .contactcontent textarea {
+  background: rgb(32, 32, 32);
+  color: var(--primaryColor);
+  width: 600px;
+  max-width: 80%;
+  resize: none;
+  box-shadow: 0 0 1px var(--primaryColor) inset;
+  border: none;
+}
+.contact .contactcontent input:hover,
+.contact .contactcontent textarea:hover {
+  box-shadow: 0 0 5px var(--secondaryColor) inset;
+}
+.contact .contactcontent input:-webkit-autofill,
+.contact .contactcontent input:-webkit-autofill:hover,
+.contact .contactcontent input:-webkit-autofill:focus,
+.contact .contactcontent textarea:-webkit-autofill,
+.contact .contactcontent textarea:-webkit-autofill:hover,
+.contact .contactcontent textarea:-webkit-autofill:focus,
+.contact .contactcontent select:-webkit-autofill,
+.contact .contactcontent select:-webkit-autofill:hover,
+.contact .contactcontent select:-webkit-autofill:focus {
+  color: var(--primaryColor);
+  box-shadow: 0 0 5px var(--secondaryColor) inset;
+  -webkit-box-shadow: 0 0 5px var(--secondaryColor) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--primaryColor);
+}
+.contact .contactcontent input {
+  height: 30px;
+  text-align: center;
+}
+.contact .contactcontent textarea {
+  margin-top: 30px;
+}
+.contact .contactcontent .submitbutton {
+  background: var(--secondaryColor);
+  cursor: pointer;
+}
+.contact .contactcontent .submitbutton::after {
+  content: "asd";
+}
 .contact .contacttopnavbar {
   margin: 0 auto;
   height: fit-content;
@@ -304,6 +367,9 @@ a {
     margin-left: 1vw;
     font-size: 6vw;
   }
+  .contact .contactcontent h1 {
+    font-size: 120px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -317,6 +383,9 @@ a {
   .header .mainheader .subtext {
     font-size: 15px;
     letter-spacing: 0.6rem;
+  }
+  .contact .contactcontent h1 {
+    font-size: 90px;
   }
 }
 
@@ -355,10 +424,7 @@ a {
   .navbar {
     height: 15vh;
   }
-  .smallscreendivider {
-    height: 60px;
-    background: var(--backgroundColor);
-    padding: 0;
-    margin: 0;
+  .contact .contactcontent h1 {
+    font-size: 18vw;
   }
 }
