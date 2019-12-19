@@ -2,9 +2,10 @@
 :root {
   --primaryColor: azure;
   --secondaryColor: crimson;
+  --backgroundColor: rgb(32, 46, 58);
 }
 body {
-  background: rgb(32, 46, 58);
+  background: var(--backgroundColor);
 }
 * {
   margin: 0;
@@ -17,7 +18,6 @@ a {
 }
 .home {
   height: 100%;
-  /* margin-bottom: 15vh; */
 }
 .header {
   background: linear-gradient(
@@ -168,86 +168,76 @@ a {
 }
 .mywork {
   height: fit-content;
-  background: rgb(32, 46, 58);
   width: 100%;
+  background: azure;
+}
+.mywork .myworkheader {
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  background: var(--backgroundColor);
+  clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
 }
 .mywork .myworkcontent {
-  background: coral;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.mywork .myworktopnavbar {
-  margin: 0 auto;
+.mywork .myworkfooter {
   height: fit-content;
-  width: fit-content;
+  width: 100%;
   text-align: center;
+  background: var(--backgroundColor);
+  clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 50% 100%, 0 100%, 0 40%);
 }
-.mywork .myworkbottomnavbar {
-  margin: 0 auto;
-  height: fit-content;
-  width: fit-content;
-  text-align: center;
-}
-.mywork .myworktopnavbar i {
+.mywork .myworkheader i {
   color: var(--primaryColor);
   font-size: 93px;
-  border: 5px rgb(32, 46, 58) solid;
+  border: 10px rgb(32, 46, 58) solid;
 }
-.mywork .myworkbottomnavbar i {
-  color: var(--primaryColor);
-  font-size: 93px;
-  border: 5px rgb(32, 46, 58) solid;
+.mywork .myworkheader i:hover {
+  border-bottom: 10px var(--secondaryColor) solid;
 }
-.mywork .myworktopnavbar i:hover {
-  border-bottom: 5px var(--secondaryColor) solid;
-}
-.mywork .myworkbottomnavbar i:hover {
-  border-top: 5px var(--secondaryColor) solid;
-}
-.mywork .myworktopnavbar i:active {
+.mywork .myworkheader i:active {
   color: var(--secondaryColor);
 }
-.mywork .myworkbottomnavbar i:active {
-  color: var(--secondaryColor);
+.contact .contactheader {
+  height: 113px;
+  width: 100%;
+  text-align: center;
+  background: var(--primaryColor);
+  clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
 }
 .contact {
   height: fit-content;
   background: rgb(32, 46, 58);
   width: 100%;
 }
-.contact .contactcontent {
-  background: coral;
-}
+/* .contact .contactcontent {
+} */
 .contact .contacttopnavbar {
   margin: 0 auto;
   height: fit-content;
   width: fit-content;
   text-align: center;
 }
-.contact .contactbottomnavbar {
+.contact .contactfooter {
   margin: 0 auto;
   height: fit-content;
   width: fit-content;
   text-align: center;
 }
-.contact .contacttopnavbar i {
+.contact .contactfooter i {
   color: var(--primaryColor);
   font-size: 93px;
-  border: 5px rgb(32, 46, 58) solid;
+  border: 10px rgb(32, 46, 58) solid;
 }
-.contact .contactbottomnavbar i {
-  color: var(--primaryColor);
-  font-size: 93px;
-  border: 5px rgb(32, 46, 58) solid;
+.contact .contactfooter i:hover {
+  border-bottom: 10px var(--secondaryColor) solid;
 }
-.contact .contacttopnavbar i:hover {
-  border-bottom: 5px var(--secondaryColor) solid;
-}
-.contact .contactbottomnavbar i:hover {
-  border-top: 5px var(--secondaryColor) solid;
-}
-.contact .contacttopnavbar i:active {
-  color: var(--secondaryColor);
-}
-.contact .contactbottomnavbar i:active {
+.contact .contactfooter i:active {
   color: var(--secondaryColor);
 }
 
@@ -364,5 +354,11 @@ a {
   }
   .navbar {
     height: 15vh;
+  }
+  .smallscreendivider {
+    height: 60px;
+    background: var(--backgroundColor);
+    padding: 0;
+    margin: 0;
   }
 }
