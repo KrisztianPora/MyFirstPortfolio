@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
 :root {
   --primaryColor: azure;
   --secondaryColor: crimson;
@@ -10,6 +12,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: var(--primaryColor);
 }
@@ -31,27 +34,35 @@ select {
       rgba(32, 46, 58, 1)
     ),
     url(/MyFirstPortfolio/images/codingbackgroudn.jpeg) center/cover no-repeat;
-  font-family: "Yanone Kaffeesatz", sans-serif;
   width: 100vw;
   max-width: 100%;
   height: 563px;
   text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 .header h1 {
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
-  font-size: 10rem;
+  font-size: 8rem;
+  font-family: "Dosis", sans-serif;
   border-bottom: var(--secondaryColor) 2px solid;
+  text-transform: capitalize;
 }
 .header .subtext {
   display: block;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding-top: 4px;
+  padding-bottom: 16px;
   letter-spacing: 0.8rem;
+  height: fit-content;
 }
 .header .subtext h3 {
+  vertical-align: top;
+  font-size: 24px;
+  padding: 12px;
   display: inline-block;
+  text-transform: capitalize;
 }
 .header .subtext .visible-smallscreen {
   display: none;
@@ -60,9 +71,11 @@ select {
   width: 300px;
 }
 .header .mainheader {
-  padding-top: 42.828px;
+  padding-top: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
-  padding-bottom: 42.828px;
+  padding-bottom: 30px;
 }
 .header .mainheader .subtext i:hover {
   background: -webkit-linear-gradient(
@@ -75,6 +88,8 @@ select {
   -webkit-text-fill-color: transparent;
 }
 .header .headerbottomtext {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   vertical-align: middle;
   padding: 0 10vw;
@@ -89,6 +104,7 @@ select {
   display: table;
   table-layout: fixed;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 .navbar div {
   display: table-cell;
@@ -102,7 +118,11 @@ select {
   border-radius: 20px;
   padding: 4vw;
   vertical-align: middle;
+  -webkit-transition-property: border, border-radius;
+  -o-transition-property: border, border-radius;
   transition-property: border, border-radius;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 .navbar .navmywork {
@@ -172,22 +192,35 @@ select {
   color: var(--secondaryColor);
 }
 .mywork {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   background: azure;
 }
 .mywork .myworkheader {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   text-align: center;
   background: var(--backgroundColor);
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
 }
 .mywork .myworkcontent {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 60px;
 }
@@ -195,10 +228,20 @@ select {
   max-width: 100%;
 }
 .mywork .myworkfooter {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   text-align: center;
   background: var(--backgroundColor);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 40%,
+    100% 100%,
+    50% 100%,
+    0 100%,
+    0 40%
+  );
   clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 50% 100%, 0 100%, 0 40%);
 }
 .mywork .myworkheader i {
@@ -217,9 +260,12 @@ select {
   width: 100%;
   text-align: center;
   background: var(--primaryColor);
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
 }
 .contact {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   background: rgb(32, 46, 58);
   width: 100%;
@@ -244,11 +290,13 @@ select {
   width: 600px;
   max-width: 80%;
   resize: none;
+  -webkit-box-shadow: 0 0 1px var(--primaryColor) inset;
   box-shadow: 0 0 1px var(--primaryColor) inset;
   border: none;
 }
 .contact .contactcontent input:hover,
 .contact .contactcontent textarea:hover {
+  -webkit-box-shadow: 0 0 5px var(--secondaryColor) inset;
   box-shadow: 0 0 5px var(--secondaryColor) inset;
 }
 .contact .contactcontent input:-webkit-autofill,
@@ -263,6 +311,7 @@ select {
   color: var(--primaryColor);
   box-shadow: 0 0 5px var(--secondaryColor) inset;
   -webkit-box-shadow: 0 0 5px var(--secondaryColor) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: var(--primaryColor);
 }
@@ -282,13 +331,21 @@ select {
 }
 .contact .contacttopnavbar {
   margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
 }
 .contact .contactfooter {
   margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
 }
@@ -323,11 +380,11 @@ select {
   .header .mainheader {
     height: 40vh;
     padding-top: 2vh;
-    padding-bottom: 0;
+    margin-bottom: 4vh;
     min-height: 340px;
   }
   .header .mainheader h1 {
-    font-size: 120px;
+    font-size: 100px;
   }
   .header .mainheader .subtext {
     font-size: 20px;
@@ -336,7 +393,6 @@ select {
   }
   .header .mainheader .subtext i {
     padding: 0;
-    padding-top: 2vh;
   }
   .header .subtext .visible-smallscreen {
     display: block;
@@ -378,11 +434,13 @@ select {
     min-height: 300px;
   }
   .header .mainheader h1 {
-    font-size: 90px;
+    font-size: 80px;
   }
   .header .mainheader .subtext {
-    font-size: 15px;
     letter-spacing: 0.6rem;
+  }
+  .header .mainheader .subtext h3 {
+    font-size: 20px;
   }
   .contact .contactcontent h1 {
     font-size: 90px;
@@ -426,5 +484,8 @@ select {
   }
   .contact .contactcontent h1 {
     font-size: 18vw;
+  }
+  .contact form {
+    margin: auto;
   }
 }
