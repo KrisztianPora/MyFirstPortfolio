@@ -429,9 +429,13 @@ select {
 }
 
 @media screen and (max-width: 600px) {
+  .header {
+    height: 75vh;
+    min-height: 500px;
+  }
   .header .mainheader {
-    height: 38vh;
-    min-height: 300px;
+    height: fit-content;
+    min-height: min-content;
   }
   .header .mainheader h1 {
     font-size: 80px;
@@ -456,10 +460,11 @@ select {
     height: 70vh;
   }
   .header .mainheader {
-    height: 45vh;
-    min-height: 240px;
+    height: fit-content;
+    min-height: min-content;
     padding-top: 2vh;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
   .header .mainheader h1 {
     font-size: 15vw;
@@ -468,9 +473,13 @@ select {
     width: 70vw;
   }
   .header .mainheader .subtext {
-    font-size: 3vw;
+    font-size: 20px;
     padding-bottom: 0;
     letter-spacing: 1.7vw;
+  }
+  .header .mainheader .subtext h3 {
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
   }
   .header .headerbottomtext {
     padding-top: 2vh;
