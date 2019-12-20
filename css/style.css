@@ -462,13 +462,13 @@ select {
     padding-bottom: 0;
   }
   .header .mainheader h1 {
-    font-size: 18vw;
+    font-size: 15vw;
   }
   .header .mainheader .logos {
     width: 70vw;
   }
   .header .mainheader .subtext {
-    font-size: 4vw;
+    font-size: 3vw;
     padding-bottom: 0;
     letter-spacing: 1.7vw;
   }
