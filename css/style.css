@@ -225,7 +225,7 @@ select {
   margin-top: 60px;
 }
 .mywork .myworkcontent img {
-  max-width: 100%;
+  max-width: 80%;
 }
 .mywork .myworkfooter {
   height: -webkit-fit-content;
