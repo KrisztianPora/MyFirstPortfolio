@@ -431,7 +431,6 @@ select {
 @media screen and (max-width: 600px) {
   .header {
     height: 75vh;
-    min-height: 500px;
   }
   .header .mainheader {
     height: fit-content;
@@ -454,10 +453,10 @@ select {
 @media screen and (max-width: 450px) {
   .home {
     height: 85%;
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
   }
   .header {
-    height: 70vh;
+    max-height: 300px;
   }
   .header .mainheader {
     height: fit-content;
@@ -490,6 +489,20 @@ select {
   }
   .navbar {
     height: 15vh;
+  }
+  .navbar .navmywork a {
+    border: none;
+  }
+  .navbar .navcontact a {
+    border: none;
+  }
+  .navbar .navmywork i {
+    margin-right: 4vw;
+    font-size: 8vw;
+  }
+  .navbar .navcontact i {
+    margin-left: 4vw;
+    font-size: 8vw;
   }
   .contact .contactcontent h1 {
     font-size: 18vw;
